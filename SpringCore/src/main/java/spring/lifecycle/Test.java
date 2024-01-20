@@ -11,7 +11,10 @@ public class Test {
 		       Emp e=(Emp) context.getBean("E");
 		       System.out.println(e);
 		       context.registerShutdownHook();
-
+		       System.out.println("___________________________________________");
+		       System.out.println();
+		      Pepsi p= (Pepsi) context.getBean("P");
+		      System.out.println(p);
 	}
 
 }

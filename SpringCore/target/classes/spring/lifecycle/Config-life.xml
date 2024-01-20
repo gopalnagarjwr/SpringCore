@@ -12,6 +12,10 @@
              <property name="id" value="101"/>
              <property name="name" value="vikas"/>
        </bean> 
+       
+       <bean class="spring.lifecycle.Pepsi" name="P">
+         <property name="val" value="10.5"/>
+       </bean>
 </beans>
 
 
