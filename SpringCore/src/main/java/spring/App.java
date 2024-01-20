@@ -9,8 +9,14 @@ public class App
     {
          ApplicationContext context =new ClassPathXmlApplicationContext("Config.xml");
          
-         Student s1=(Student) context.getBean("st1");
-         System.out.print(s1);
-         
+		 
+			  Student s1=(Student) context.getBean("st1"); Student s2=(Student)
+			  context.getBean("st2");
+			  
+         Student s3=(Student) context.getBean("st3");
+			  System.out.println(s1);
+			  System.out.println(s2);
+			 
+         System.out.println(s3);
     }
 }
