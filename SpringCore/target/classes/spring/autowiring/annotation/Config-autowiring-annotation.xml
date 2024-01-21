@@ -15,6 +15,11 @@
 		<property name="street" value="pratap nagar" />
 	</bean>
 
+	<bean class="spring.autowiring.annotation.Address" name="add1">
+		<property name="city" value="kota" />
+		<property name="street" value="jawar nagar" />
+	</bean>
+	
 	<bean class="spring.autowiring.annotation.Emp" name="E" />
  
 

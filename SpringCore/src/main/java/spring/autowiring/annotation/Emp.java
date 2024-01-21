@@ -1,9 +1,11 @@
 package spring.autowiring.annotation;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 
 public class Emp {
-//	@Autowired                       first way
+	@Autowired
+	@Qualifier("add1")		  //     first way
 	private Address add;
 
 	public Address getAdd() {
@@ -16,7 +18,7 @@ public class Emp {
 		this.add = add;
 	}
 
-	@Autowired                   //   third way
+//	@Autowired                      third way
 	public Emp(Address add) {
 		super();
 		this.add = add;
