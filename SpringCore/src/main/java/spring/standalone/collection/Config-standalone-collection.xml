@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springfremwork.org/schema/context"
+	xmlns:p="http://www.springfremwork.org/schema/p"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd
+    http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/util https://www.springframework.org/schema/util/spring-util.xsd">
+
+
+	<util:list list-class="java.util.LinkedList" id="ll">
+		<value>Rahul</value>
+		<value>vikas</value>
+		<value>vaibhav</value>
+		<value>jobhy</value>
+	</util:list>
+
+	<util:map map-class="java.util.HashMap" id="HM">
+		<entry key="Rahul" value="bara" />
+		<entry key="vikas" value="tonk" />
+		<entry key="vaibhav" value="jhalana" />
+		<entry key="jobhy" value="kota" />
+	</util:map>
+
+	<bean class="spring.standalone.collection.Persone" name="p">
+
+		<!-- <property name="friends"> <ref bean="ll" /> </property> -->
+
+		<property name="friends" ref="ll" />
+		<property name="city" ref="HM" />
+
+	</bean>
+
+
+   <bean class="spring.standalone.collection.Persone" name="p1">
+
+		<!-- <property name="friends"> <ref bean="ll" /> </property> -->
+
+		<property name="friends" ref="ll" />
+		<property name="city" ref="HM" />
+
+	</bean>
+
+</beans>
+
+
+
+ 
