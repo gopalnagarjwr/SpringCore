@@ -42,7 +42,7 @@ class Service {
 		this.d1 = d1;
 	}
 
-//	@Autowired
+    // @Autowired
 	public void setD2(Dependency2 d2) {
 		this.d2 = d2;
 	}

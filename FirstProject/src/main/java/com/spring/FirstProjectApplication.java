@@ -16,15 +16,12 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 public class FirstProjectApplication {
 
 	public static void main(String[] args) {
-
 		var context = new AnnotationConfigApplicationContext(JavaConfig.class);
 		GameRunner gameRunner = context.getBean(GameRunner.class);
 		GameRunner gameRunner1 = context.getBean(GameRunner.class);
 		GameRunner gameRunner2 = context.getBean(GameRunner.class);
-		System.out.println(gameRunner.hashCode());
-		System.out.println(gameRunner1.hashCode());
-		System.out.println(gameRunner2.hashCode());
-		gameRunner.run();
+		 
+		gameRunner.run();	
 	}
 
 }
